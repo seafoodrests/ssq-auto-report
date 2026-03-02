@@ -33,6 +33,6 @@ msg["From"] = "双色球系统"
 msg["To"] = "77630984@qq.com"
 
 server = smtplib.SMTP_SSL("smtp.qq.com", 465)
-server.login("你的QQ邮箱", "SMTP授权码")
+server.login("EMAIL_TO", "EMAIL_PASS")
 server.send_message(msg)
 server.quit()
